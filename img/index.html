@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styler.css">
+    <title>banco de dados</title>
+</head>
+<body>
+    <form action="cadastro.php" method="POST" id="cadastroForm">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+        <br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email">
+        <br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha">
+        <br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <script>
+        const form = document.getElementById('cadastroForm');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nomeInput = document.getElementById('nome');
+            const emailInput = document.getElementById('email');
+            const senhaInput = document.getElementById('senha');
+
+            if (nomeInput.value.trim() === '') {
+                alert('Por favor, digite seu nome.');
+                nomeInput.focus();
+                return;
+            }
+
+            if (emailInput.value.trim() === '') {
+                alert('Por favor, digite seu e-mail.');
+                emailInput.focus();
+                return;
+            }
+
+            if (senhaInput.value.trim() === '') {
+                alert('Por favor, digite sua senha.');
+                senhaInput.focus();
+                return;
+            }
+
+            // Se todas as validações passarem, você pode enviar o formulário
+            form.submit();
+        });
+    </script>
+</body>
+</html>

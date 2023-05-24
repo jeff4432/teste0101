@@ -1,0 +1,77 @@
+body {
+    background-image: url("img/transferir.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 1200px;
+    margin: 1 auto;
+  }
+
+
+
+    
+  
+  
+  .login-container {
+    text-align: center;
+  }
+  
+  .login-container > div {
+    display: inline-block;
+    width: 30%; /* Ajuste a largura conforme necessário */
+    vertical-align: top; /* Alinha as divs ao topo */
+    box-sizing: border-box; /* Considera as bordas e o padding no cálculo da largura */
+    padding: 15px;
+  }
+  
+  .login-link {
+    text-decoration: none;
+    color: #dedcdc;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 20px ; color: #000000;
+    display: block; /* Alterado para block para preencher toda a largura da div */
+    margin-bottom: 20px; /* Adiciona um espaçamento entre as divs */
+  }
+  
+  .login-link:hover {
+    background-color: #b0a9ee;
+  }
+  
+  
+  h1 {
+    color: #151414;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  h2 {
+    color: #0b0b0b;
+    margin-top: 30px;
+  }
+  
+  p {
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  ul, ol {
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  
+  img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+  }
+ 
